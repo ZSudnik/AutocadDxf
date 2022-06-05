@@ -20,10 +20,10 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'key12'
-            keyPassword 'biniu_1234'
-            storeFile file('keystore/viewer3D.jks')
-            storePassword 'biniu_1234'
+            keyAlias 'xxxAlias'
+            keyPassword 'xxxKey'
+            storeFile file('keystore/xxxViewer3D.jks')
+            storePassword 'xxxPassword'
         }
     }
 
