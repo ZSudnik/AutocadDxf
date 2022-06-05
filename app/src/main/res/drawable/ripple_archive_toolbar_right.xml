@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/material_ripple_light">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/material_ripple_light"/>
+            <corners android:topRightRadius="@dimen/archive_toolbar_halfheight" android:bottomRightRadius="@dimen/archive_toolbar_halfheight"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/archive_toolbar_color"/>
+            <corners android:topRightRadius="@dimen/archive_toolbar_halfheight" android:bottomRightRadius="@dimen/archive_toolbar_halfheight"/>
+        </shape>
+    </item>
+</ripple>

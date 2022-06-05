@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/arplan_theme_color">
+    <item android:id="@android:id/mask">
+        <shape android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:shape="rectangle">
+            <solid android:color="@color/arplan_theme_color"/>
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:shape="rectangle">
+            <stroke android:width="2px" android:color="@color/text_color"/>
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <public type="xml" name="provider_paths" id="0x7f140000" />
+    <public type="xml" name="standalone_badge" id="0x7f140001" />
+    <public type="xml" name="standalone_badge_gravity_bottom_end" id="0x7f140002" />
+    <public type="xml" name="standalone_badge_gravity_bottom_start" id="0x7f140003" />
+    <public type="xml" name="standalone_badge_gravity_top_start" id="0x7f140004" />
+    <public type="xml" name="standalone_badge_offset" id="0x7f140005" />
+    <public type="xml" name="splits0" id="0x7f140006" />
+</resources>

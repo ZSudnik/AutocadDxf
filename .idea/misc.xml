@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/drawable/actionbar.xml" value="0.17592592592592593" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/activity_browse.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/activity_display.xml" value="0.1" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/activity_folder.xml" value="0.22333333333333336" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/activity_gvr.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/include_error_overlay.xml" value="0.22333333333333336" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/include_loading_overlay.xml" value="0.1" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/include_notfing_read.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/include_settings_panel.xml" value="0.1" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/item_category.xml" value="0.1" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/item_file.xml" value="0.1" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/layout/item_sample.xml" value="0.1" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/menu/archive_menu_drawer.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/menu/archive_selection_inner_project_menu.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/menu/archive_selection_menu.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/menu/archive_sort_methods.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/menu/browse_actions.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/menu/display_actions.xml" value="0.17916666666666667" />
+        <entry key="..\:/#robot_android/AutocadDfx/app/src/main/res/xml/display_preferences.xml" value="0.22333333333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

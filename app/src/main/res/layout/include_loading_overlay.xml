@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/loading_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Overlay_Dark">
+    <ImageView android:id="@+id/loading_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_loading" android:layout_centerInParent="true" android:tint="@color/GREEN_LIGHT" android:contentDescription="@string/display_activity_loading_image_desc"/>
+</RelativeLayout>

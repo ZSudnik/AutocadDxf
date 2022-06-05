@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_settings" android:id="@+id/display_activity_preferences_menu" android:title="@string/display_preferences_title" android:showAsAction="always"/>
+</menu>

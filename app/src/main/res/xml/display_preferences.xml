@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/display_preferences_background_titles" android:title="@string/display_preferences_background_title" android:key="@string/display_preferences_background_key" android:defaultValue="@string/display_preferences_background_values_black" android:entryValues="@array/display_preferences_background_values"/>
+    <CheckBoxPreference android:title="@string/display_preferences_twosided_title" android:key="@string/display_preferences_twosided_key" android:defaultValue="false"/>
+    <CheckBoxPreference android:title="@string/display_preferences_lighting_title" android:key="@string/display_preferences_lighting_key" android:defaultValue="true"/>
+    <ListPreference android:entries="@array/display_preferences_rotation_titles" android:title="@string/display_preferences_rotation_title" android:key="@string/display_preferences_rotation_key" android:defaultValue="@string/display_preferences_rotation_values_xy" android:entryValues="@array/display_preferences_rotation_values"/>
+</PreferenceScreen>

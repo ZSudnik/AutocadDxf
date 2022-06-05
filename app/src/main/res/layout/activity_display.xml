@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/display_activity_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/exit_btn" android:background="@drawable/ripple_exit_rounded" android:visibility="visible" android:layout_width="@dimen/width_button" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_button_top" android:elevation="6dp">
+            <TextView android:textSize="14sp" android:textColor="@color/text_color"  android:gravity="center" android:id="@+id/exit_btn_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_marginTop="1dp" android:layout_marginBottom="1dp" android:text="@string/but_exit"/>
+        </LinearLayout>
+        <TextView android:id="@+id/name_deflist" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/sample_btn" android:layout_gravity="center" android:background="@drawable/ripple_exit_rounded" android:visibility="visible" android:layout_width="@dimen/width_button" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_button_top" android:elevation="6dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:src="@drawable/ic_hexagram_outline_black_24dp" android:contentDescription="@string/sample_btn" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/open_btn" android:layout_gravity="center" android:background="@drawable/ripple_exit_rounded" android:visibility="visible" android:layout_width="@dimen/width_button" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_button_top" android:elevation="6dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:src="@drawable/baseline_folder_open_black_24" android:contentDescription="@string/open_btn" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/setup_btn" android:layout_gravity="center" android:background="@drawable/ripple_exit_rounded" android:visibility="visible" android:layout_width="@dimen/width_button" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_button_top" android:elevation="6dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:src="@drawable/baseline_settings_black_24" android:contentDescription="@string/but_setup" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:visibility="gone" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_button_top" android:layout_marginEnd="@dimen/margin_button_start">
+        <TextView android:id="@+id/name_deflist2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/select_all_btn" android:layout_gravity="center" android:background="@drawable/ripple_exit_rounded" android:visibility="visible" android:layout_width="@dimen/width_button_sec" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_button_top" android:elevation="6dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:src="@drawable/outline_select_all_black_24" android:contentDescription="@string/but_select_all" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/deselect_all_btn" android:layout_gravity="center" android:background="@drawable/ripple_exit_rounded" android:visibility="visible" android:layout_width="@dimen/width_button_sec" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_button_top" android:elevation="6dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center"  android:src="@drawable/outline_deselect_black_24"
+                android:contentDescription="@string/but_deselect_all" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_settings_panel"/>
+    <include layout="@layout/include_loading_overlay"/>
+    <include layout="@layout/include_error_overlay"/>
+</RelativeLayout>

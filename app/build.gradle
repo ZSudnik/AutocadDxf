@@ -1,0 +1,124 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+}
+
+android {
+
+    compileSdk 31
+    defaultConfig {
+        applicationId "zibi.robotx.arplan"
+        minSdk 26
+        targetSdk 31
+        versionCode 4
+        versionName "1.04"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'key12'
+            keyPassword 'biniu_1234'
+            storeFile file('keystore/viewer3D.jks')
+            storePassword 'biniu_1234'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled true //false
+            shrinkResources true
+            // minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def project = "viewer3D"
+                    def SEP = "_"
+//                    def buildType = variant.variantData.variantConfiguration.buildType.name
+                    def ver = variant.versionName
+                    def date = new Date();
+                    def fDate = date.format('ddMMyy')
+                    def newApkName = project +SEP+ ver+SEP+fDate+".apk"
+                    outputFileName = new File(newApkName)
+                }
+            }
+        }
+        debug {
+            debuggable true
+            jniDebuggable true
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+//            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        main {
+//            assets.srcDirs = ['/res/raw']
+            assets.srcDirs = ['assets']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled true
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+//    implementation 'androidx.compose.ui:ui-graphics:1.1.0-beta03'
+//    implementation 'com.google.ar:core:1.28.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "androidx.core:core-ktx:1.7.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"
+
+
+
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
+    //Java math
+    implementation 'javax.vecmath:vecmath:1.5.2'
+
+
+
+    implementation "androidx.activity:activity-ktx:1.4.0"
+    implementation "androidx.multidex:multidex:2.0.1"
+
+//    implementation "androidx.lifecycle:lifecycle-runtime:2.4.0"
+//    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+
+//    implementation "androidx.lifecycle:lifecycle-viewmodel:2.4.0"
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
+
+//    implementation "androidx.lifecycle:lifecycle-livedata:2.4.0"
+//    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
+
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+//    const val viewModelSavedState = "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+//    const val commonJava8 = "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+//    const val service = "androidx.lifecycle:lifecycle-service:$lifecycle_version"
+//    const val extensions = "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    // billing
+    implementation "com.android.billingclient:billing-ktx:4.0.0"
+
+}

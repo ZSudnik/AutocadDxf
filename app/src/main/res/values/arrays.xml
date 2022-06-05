@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ar_units">
+        <item>@string/cm</item>
+        <item>@string/m</item>
+        <item>@string/mm</item>
+        <item>@string/in</item>
+        <item>@string/ft</item>
+        <item>@string/yd</item>
+    </array>
+    <array name="intro_4_videos_array">
+<!--        <item>@raw/intro_4_2</item>-->
+<!--        <item>@raw/intro_4_3</item>-->
+    </array>
+/////////////////////////////////////////////////
+    <array name="display_preferences_background_values">
+        <item>@string/display_preferences_background_values_black</item>
+        <item>@string/display_preferences_background_values_gray</item>
+        <item>@string/display_preferences_background_values_red</item>
+        <item>@string/display_preferences_background_values_green</item>
+        <item>@string/display_preferences_background_values_blue</item>
+        <item>@string/display_preferences_background_values_white</item>
+    </array>
+    <array name="display_preferences_rotation_values">
+        <item>@string/display_preferences_rotation_values_xy</item>
+        <item>@string/display_preferences_rotation_values_free</item>
+        <item>@string/display_preferences_rotation_values_block</item>
+    </array>
+    <array name="display_preferences_background_titles">
+        <item>Black</item>
+        <item>Gray</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>White</item>
+    </array>
+    <array name="display_preferences_rotation_titles">
+        <item>XY Rotation</item>
+        <item>Free Rotation</item>
+        <item>Block Rotation</item>
+    </array>
+
+</resources>

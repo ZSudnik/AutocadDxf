@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/sort_time_waning_96" android:id="@+id/sortByTimeDescending" android:title="@string/sortMethodCreationTime"/>
+    <item android:icon="@drawable/sort_time_ascending_96" android:id="@+id/sortByTimeAscending" android:title="@string/sortMethodCreationTime"/>
+    <item android:icon="@drawable/sort_a_z_waning_96" android:id="@+id/sortByNameDescending" android:title="@string/sortMethodDocName"/>
+    <item android:icon="@drawable/sort_a_z_ascending_96" android:id="@+id/sortByNameAscending" android:title="@string/sortMethodDocName"/>
+</menu>

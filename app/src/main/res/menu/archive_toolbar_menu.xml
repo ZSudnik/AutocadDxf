@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/folder_add_96" android:id="@+id/add_folder_btn" android:title="@string/action_add_folder" android:actionViewClass="android.widget.ImageButton" app:showAsAction="always"/>
+    <item android:icon="@drawable/search_96" android:id="@+id/search" android:title="@string/action_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="ifRoom|collapseActionView"/>
+</menu>

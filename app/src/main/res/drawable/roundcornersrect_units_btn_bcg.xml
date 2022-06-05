@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/units_btn_bcg"/>
+    <corners android:topLeftRadius="@dimen/units_btn_radius" android:topRightRadius="@dimen/units_btn_radius" android:bottomLeftRadius="@dimen/units_btn_radius" android:bottomRightRadius="@dimen/units_btn_radius"/>
+</shape>
